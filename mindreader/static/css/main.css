@@ -1,0 +1,100 @@
+body {
+    height: 100%;
+    padding: 0;
+}
+h1 {
+    color: #fff;
+    display: inline-block;
+}
+.page {
+    padding: 1.5em;
+}
+.page-bg {
+    position: fixed;
+    z-index: -1;
+    width: 200%;
+    height: 200%;
+    left: -50%;
+}
+.page-bg img {
+    display: block;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.message-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.message-list > li {
+    display: block;
+    margin: 1.5em 0;
+    webkit-border-radius: 8px;
+    moz-border-radius: 8px;
+    o-border-radius: 8px;
+    border-radius: 8px;
+    webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.23);
+    moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.23);
+    o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.23);
+}
+.message-list li .message {
+    background-color: #fff;
+    padding: 1em;
+    webkit-border-radius: 8px 8px 0 0;
+    moz-border-radius: 8px 8px 0 0;
+    o-border-radius: 8px 8px 0 0;
+    border-radius: 8px 8px 0 0;
+}
+.message-list li .info {
+    margin: 0;
+    padding: 0.5em 1em;
+    text-align: right;
+    webkit-border-radius: 0 0 8px 8px;
+    moz-border-radius: 0 0 8px 8px;
+    o-border-radius: 0 0 8px 8px;
+    border-radius: 0 0 8px 8px;
+    background-color: #d9edf7;
+}
+.message-list li .info span {
+   margin-right: 10px;
+}
+.message-list li .info span.last {
+    margin-right: 0;
+}
+footer {
+    color: #fff;
+}
+
+.accuracy {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 10px;
+}
+.accuracy.high {
+    background-color: green;
+}
+.accuracy.medium {
+    background-color: yellow;
+    width: 46px;
+    height: 46px;
+    line-height: 46px;
+    border-radius: 23px;
+}
+.accuracy.low {
+    background-color: red;
+    width: 52px;
+    height: 52px;
+    line-height: 52px;
+    border-radius: 26px;
+}
