@@ -93,7 +93,8 @@ def message_post(request):
         return {'id': message.identifier.hex,
                 'message': message.message,
                 'created': message.created,
-                'distance': distance_map[0]}
+                'distance': distance_map[0],
+                'votes': 0}
 
     raise HTTPBadRequest()
 
